@@ -73,7 +73,8 @@
         <% end %>
         <% @model.column_names.each do |column| %>
           <th class="column_<%= column %>" style="<%= display_style_column(@table.name, column)%>">
-            <%= sort_link @q, column, controller: :tables, action: :data %>
+            <%#= sort_link @q, column, controller: :tables, action: :data %>
+            <th><%= column.name %></th>
           </th>
         <% end %>
       </tr>
@@ -98,7 +99,7 @@
           <% end %>
           <% @model.column_names.each do |column| %>
             <!--<th> <%#= sort_link @q, column, controller: :tables, action: :data %> </th>-->
-            <th><%= column %></th>
+            <th><%= column.name %></th>
           <% end %>
         </tr>
       </tfoot>
