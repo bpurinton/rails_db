@@ -26,5 +26,8 @@ if Object.const_defined?('RailsDb')
 
     # # Sandbox mode (only read-only operations)
     # config.sandbox = false
+
+    # # Titleize column names
+    # config.titleize_columns = true
   end
 end

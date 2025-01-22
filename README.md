@@ -111,6 +111,7 @@ If will create file config/initializers/rails_db.rb.
 *   **verify_access_proc** - allow access by specific conditions, for example by role for current_user, or
 you can use for example Pundit here (default: `proc { |controller| true }`)
 *   **sandbox** - allow only read-only queries (https://github.com/igorkasyanchuk/rails_db/pull/122)
+*   **titleize_columns** - titleize column names (default: true)
 
 If you want to add routes manually (or customize the mounted location) you need to first turn off automatic_routes_mount and then add to your `routes.rb`
 

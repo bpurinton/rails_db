@@ -50,6 +50,10 @@ module RailsDb
   mattr_accessor :verify_access_proc
   @@verify_access_proc = proc { |controller| true }
 
+  # Titleize column names
+  mattr_accessor :titleize_columns
+  @@titleize_columns = true
+
   def self.setup
     yield(self)
   end
@@ -60,6 +64,7 @@ module RailsDb
     self.black_list_tables                  = self.white_list_tables = []
     self.http_basic_authentication_enabled  = false
     self.verify_access_proc                 = proc { |controller| true }
+    self.titleize_columns                   = true
   end
 
 end
