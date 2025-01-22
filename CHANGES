@@ -1,3 +1,6 @@
+2.5.0
+  - add titleize_columns option
+
 2.4.4
   - add csv dependency https://github.com/igorkasyanchuk/rails_db/pull/140
 

@@ -37,11 +37,7 @@
         <th>PK</th>
       <% end %>
       <% @table.column_properties.each do |key| %>
-        <% if RailsDb.titleize_columns %>
-          <th><%= key.titleize.upcase %></th>
-        <% else %>
-          <th><%= key %></th>
-        <% end %>
+        <th><%= key.titleize.upcase %></th>
       <% end %>
     </tr>
   </thead>
