@@ -85,6 +85,16 @@ Or only for development:
 
 Run `bundle install`
 
+### Rails 8 Setup
+
+For Rails 8 projects, you need to generate the required configuration files:
+
+```bash
+rails g rails_db initializer
+```
+
+This will create both the initializer and the required `app/assets/config/manifest.js` file for Rails 8 compatibility.
+
 Visit **`http://localhost:3000/rails/db`** and you will see your database tables and SQL editors.
 > Use port 12345 if running in 'standalone' mode
 
